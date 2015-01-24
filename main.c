@@ -79,36 +79,65 @@ int main(int argc, char** argv) {
 }
 
 float somma(float a, float b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato;
+    
+    risultato = a+b;
+    
+    return risultato;
 }
 
 float sottrazione(float a, float b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato;
+    
+    risultato = a-b;
+    
+    return risultato;
 }
 
 float prodotto(float a, float b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato;
+    
+    risultato = a*b;
+    
+    return risultato;
 }
 
 float divisione(float a, float b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato;
+    
+    risultato = a/b;
+    
+    return risultato;
 }
 
 int quoziente(int a, int b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    int quoziente;
+    
+    quoziente = a/b;
+    
+    return quoziente;
 }
 
 float frazionale(int a, int b) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato;
+	int risultatoIntero;
+	
+	risultato = (float)a/(float)b;
+	
+	risultatoIntero = a/b;
+	
+	risultato -= risultatoIntero;
+	
+	return risultato;
 }
 
 float potenza(float base, int esponente) {
-    // TODO Definire il corpo della funzione
-    return 0;
+    float risultato = 1;
+    int i;
+    esponente = (int)esponente;
+    
+    for(i=0;i<esponente;i++) {
+          risultato = risultato*base;
+    }
+    return risultato;
 }
